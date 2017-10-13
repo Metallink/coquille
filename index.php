@@ -227,11 +227,9 @@
             <a href="#galerie" style="padding-left: 3%">La galerie</a>
             <a href="#contact">Contact</a>
         </div>
-<!--Test -->
         <div id="content">
             <div id="accueil">
 
-<!--CARTE YOLO -->
             </div>
             <div id="carte">
                 <h1>La carte</h1>
