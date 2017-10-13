@@ -1,4 +1,4 @@
-/.idea
+.idea/
 Supprimerait .gitignore
 Supprimerait .idea/coquille.iml
 Supprimerait .idea/modules.xml

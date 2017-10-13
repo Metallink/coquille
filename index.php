@@ -227,7 +227,7 @@
             <a href="#galerie" style="padding-left: 3%">La galerie</a>
             <a href="#contact">Contact</a>
         </div>
-
+<!--Test -->
         <div id="content">
             <div id="accueil">
 
