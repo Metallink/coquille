@@ -230,6 +230,7 @@
 <!--Test -->
         <div id="content">
             <div id="accueil">
+
 <!--CARTE -->
             </div>
             <div id="carte">
