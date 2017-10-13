@@ -231,7 +231,7 @@
         <div id="content">
             <div id="accueil">
 
-<!--CARTE -->
+<!--CARTE YOLO -->
             </div>
             <div id="carte">
                 <h1>La carte</h1>
