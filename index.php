@@ -216,7 +216,6 @@
                 <li><a href="#carte">La carte</a></li>
                 <li style="background: #e5e5e5"><a href="#cave">La cave</a></li>
                 <li><a href="#galerie">La galerie</a></li>
-                <li><a href="#reserver">Reserver</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -226,7 +225,6 @@
             <a href="#carte">La carte</a>
             <a href="#cave" style="padding-right: 3%">La cave</a>
             <a href="#galerie" style="padding-left: 3%">La galerie</a>
-            <a href="#reserver">Reserver</a>
             <a href="#contact">Contact</a>
         </div>
 
