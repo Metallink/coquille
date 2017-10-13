@@ -1,0 +1,5 @@
+/.idea
+Supprimerait .gitignore
+Supprimerait .idea/coquille.iml
+Supprimerait .idea/modules.xml
+Supprimerait .idea/workspace.xml

@@ -248,9 +248,6 @@
                     <img src="galerie3.jpg">
                 </div>
             </div>
-            <div id="reserver">
-
-            </div>
             <div id="contact">
                 <span style="padding-right: 5%;">
                     <a id="tel" href="tel:+33561347892"><i class="material-icons">phone</i>+33 (0)5 61 34 78 92</a>
