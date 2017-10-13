@@ -230,7 +230,7 @@
 <!--Test -->
         <div id="content">
             <div id="accueil">
-
+<!--ZOU-->
             </div>
             <div id="carte">
                 <h1>La carte</h1>
