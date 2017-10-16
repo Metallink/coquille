@@ -273,6 +273,7 @@
                     <img src="galerie1.jpg">
                     <img src="galerie2.jpg">
                     <img src="galerie3.jpg">
+                    <i class="material-icons">chevron_right</i>
                 </div>
             </div>
             <div id="contact">
