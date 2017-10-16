@@ -109,17 +109,44 @@
 
         #menu-normal {
             display: block;
-            background-color: #000;
-            height: 40px;
             width 100%;
+            height: 50px;
+
             margin-top: 40px;
-            padding-top: 40px;
+            padding-top: 28px;
+            padding-bottom: 30px;
+            
             text-align: center;
+            line-height: 94px;
+            
+            background: url('head_bg.png') center top repeat-x rgba(255, 255, 255, .85);
+            border-bottom: solid 1px #7b7a78;
+            border-bottom: solid 2px #c7a758;
+            transition: opacity .3s linear;
         }
 
         #menu-normal a {
-            color: #fff;
+            color: #000;
             margin: auto 3%;
+            font-size: 20px; 
+        }
+
+        #a-accueil {
+            border-bottom: 5px solid #5fc1a2;
+            padding-bottom: 14px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #nautilus-normal {
+            width: 40px;
+            margin-top: -106px;
+            margin-left: -6px;
+        }
+
+        #nautilus-normal + p {
+            margin-top: -83px;
+            margin-left: -6px;
         }
 
         #content {
@@ -198,7 +225,7 @@
 
     <body>
         <div id="bandeau-contact">
-            <span>FR | ESP | ENG</span>
+            <span>FR | ESP | ENG</span>
             <span>
                 <a id="tel" href="tel:+33561347892"><i class="material-icons">phone</i>+33 (0)5 61 34 78 92</a>
             </span>
@@ -216,17 +243,20 @@
                 <li><a href="#carte">La carte</a></li>
                 <li style="background: #e5e5e5"><a href="#cave">La cave</a></li>
                 <li><a href="#galerie">La galerie</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
 
         <div id="menu-normal">
-            <a href="#accueil">Accueil</a>
-            <a href="#carte">La carte</a>
-            <a href="#cave" style="padding-right: 3%">La cave</a>
-            <a href="#galerie" style="padding-left: 3%">La galerie</a>
-            <a href="#contact">Contact</a>
+            <a id="a-accueil" href="#accueil">Accueil</a>
+            <a href="#carte" style="padding-right: 4%">La carte</a>
+            <a href="#cave" style="padding-left: 4%">La cave</a>
+            <a href="#galerie">La galerie</a>
+            <div>
+                <img id="nautilus-normal" src="nautilus.png">
+                <p>La Coquille</p>
+            </div>
         </div>
+
         <div id="content">
             <div id="accueil">
 
