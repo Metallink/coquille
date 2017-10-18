@@ -65,6 +65,7 @@
         #bandeau-contact {
             background-color: #f6f6f6;
             position: fixed;
+            z-index: 2000;
             display: block;
             height: 40px;
             width: 100%;
@@ -132,8 +133,8 @@
         }
 
         #a-accueil {
-            border-bottom: 5px solid #5fc1a2;
-            padding-bottom: 14px;
+            border-bottom: 5px solid #c7a658;
+            padding-bottom: 15px;
             padding-left: 20px;
             padding-right: 20px;
         }
@@ -155,7 +156,7 @@
             width: 60%;
         }
 
-        #content > div {
+        #carte, #cave, #galerie, #contact {
             padding: 20px 50px;
         }
 
@@ -171,16 +172,41 @@
             background-color: #00897B;
         }
 
+        #container-cave {
+            background-image: url('vins.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            height: 525px;
+        }
+
+        #filtre-cave {
+            background-color: #642021;
+            opacity: 0.9;
+            width: 100%;
+            height: 100%;
+        }
+
         #cave {
-            background-color: #E53935;
+            position: absolute;
+            margin-top: -525px;
+        }
+
+        #cave table {
+            width: 1040px;
+            margin-top: 20px;
+        }
+        
+        #content * {
+            color: #fff;
         }
 
         #galerie {
-            background-color: rgba(0,0,0,0.82);
+            background-color: rgba(0,0,0,0.88);
         }
 
         #images {
-            height: 220px;
+            height: 230px;
             overflow-x: auto;
             white-space: nowrap;
         }
@@ -191,10 +217,25 @@
         }
 
         #images::-webkit-scrollbar-thumb {
-            border: 3px solid #2E2E2E;
+            border: 3px solid #191919;
             border-radius: 10px;
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-            background-color: #555;
+            -webkit-box-shadow: inset 0 0 6px #111;
+            background-color: #111;
+        }
+
+        #scroll-images {
+            position: absolute;
+            width: 100px;
+            height: 320px;
+            background-color: rgba(0,0,0,0.6);
+            margin-top: -300px;
+            margin-left: 954px;
+        }
+
+        #scroll-images > i.material-icons {
+            font-size: 160px;
+            margin-top: 90px;
+            margin-left: -25px;
         }
         
         #galerie h1 {
@@ -207,10 +248,6 @@
 
         #galerie img:not(:last-child) {
             margin-right: 50px;
-        }
-
-        #reserver {
-
         }
 
         #contact {
@@ -259,13 +296,146 @@
 
         <div id="content">
             <div id="accueil">
-
+                
             </div>
             <div id="carte">
                 <h1>La carte</h1>
             </div>
-            <div id="cave">
-                <h1>La cave</h1>
+            <div id="container-cave">
+                <div id="filtre-cave"></div>
+                <div id="cave">
+                    <h1>La cave</h1>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td><span style= font-size:18px; ><strong>Nos Vins blancs</strong></span></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><u>Vallée de la Loire</u></td>
+                        </tr>
+                        <tr>
+                            <td>IGP Vin de pays d&#39;Urf&eacute;, Domaine G. Bonnefoy &quot;Roussanne&quot;</td>
+                            <td>2014</td>
+                            <td>75cl</td>
+                            <td>38.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP Pouilly Fum&eacute;, Domaine de Ladoucette</td>
+                            <td>2014</td>
+                            <td>75cl</td>
+                            <td>49.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP Sancerre, Domaine des Clairneaux</td>
+                            <td>2015</td>
+                            <td>75cl</td>
+                            <td>39.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><u>Vall&eacute;e du Rh&ocirc;ne</u></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP Condrieu, Domaine F. Villard &quot;Les Terrasses du Palat&quot;</td>
+                            <td>2014-2015</td>
+                            <td>75cl</td>
+                            <td>79.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP Condrieu, Domaine S. Montez &quot;Chansons&quot;</td>
+                            <td>2014</td>
+                            <td>75cl</td>
+                            <td>75.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP Condrieu, Domaine S. Montez &quot;La grillette&quot;</td>
+                            <td>Plusieurs dispo</td>
+                            <td>75cl</td>
+                            <td>94.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><span style= font-size:18px; ><strong>Nos Vins rouges</strong></span></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><u>Bordeaux</u></td>
+                        </tr>
+                        <tr>
+                            <td>AOP Montlouis, Domaine de La Taille aux Loups</td>
+                            <td>2014</td>
+                            <td>75cl</td>
+                            <td>56.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP Menetou-Salon, Ch&acirc;teau de Maupas</td>
+                            <td>2014</td>
+                            <td>75cl</td>
+                            <td>30.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP Savenni&egrave;res, Ch&acirc;teau Soucherie &quot;Clos des Perri&egrave;res&quot;</td>
+                            <td>2014</td>
+                            <td>75cl</td>
+                            <td>70.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><u>Vall&eacute;e du Rh&ocirc;ne</u></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP Condrieu, Aur&eacute;lien Chataignier</td>
+                            <td>2015</td>
+                            <td>75cl</td>
+                            <td>67.50&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP St Joseph, Domaine Fran&ccedil;ois Villard &quot;Mairlant&quot;</td>
+                            <td>2014-2015</td>
+                            <td>75cl</td>
+                            <td>56.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP St Joseph, S. Montez</td>
+                            <td>2014</td>
+                            <td>75cl</td>
+                            <td>48.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP St Joseph, Julien Pilon &quot;Dimanche &agrave; Lima&quot;</td>
+                            <td>2014</td>
+                            <td>75cl</td>
+                            <td>54.00&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>AOP St Joseph, Aur&eacute;lien Chataignier</td>
+                            <td>2015</td>
+                            <td>75cl</td>
+                            <td>40.00&euro;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div id="galerie">
                 <h1>La galerie</h1>
@@ -273,6 +443,8 @@
                     <img src="galerie1.jpg">
                     <img src="galerie2.jpg">
                     <img src="galerie3.jpg">
+                </div>
+                <div id="scroll-images">
                     <i class="material-icons">chevron_right</i>
                 </div>
             </div>
