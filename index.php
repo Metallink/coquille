@@ -47,7 +47,7 @@
             border-spacing: 0;
         }
 
-        body {
+        body * {
             font-family: 'Open Sans', sans-serif;
         }
 
@@ -156,6 +156,10 @@
             width: 60%;
         }
 
+        #content * {
+            color: #fff;
+        }
+
         #carte, #cave, #galerie, #contact {
             padding: 20px 50px;
         }
@@ -168,10 +172,51 @@
             height: 530px;
         }
 
+        #container-reserver {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding-left: 15%;
+            padding-top: 80px;
+        }
+
         #reserver {
-            background-color: rgba(255,255,255,0.8);
-            width: 100px;
-            height: 100px;
+            background-color: rgba(255,255,255,0.9);
+            width: 220px;
+            height: 300px;
+            border-radius: 5px;
+            border: 2px solid #c7a757;
+            padding: 12px;
+        }
+
+        #reserver * {
+            color: #000;
+        }
+
+        #reserver h2 {
+            font-size: 20px;
+        }
+
+        #reserver .blue {
+            color: #0087ce;
+        }
+
+        #reserver .input {
+            border: 1px solid grey;
+            border-radius: 1px;
+            padding: 5px;
+            margin: 10px auto;
+            color: gray;
+        }
+
+        #confirm {
+            border: 1px solid black;
+            padding: 10px 15px;
+            width: 80px;
+            text-align: center;
+            background-color: #0087ce;
+            color: #fff;
+            border-radius: 3px;
         }
 
         #container-carte {
@@ -217,10 +262,6 @@
         #cave table {
             width: 1040px;
             margin-top: 20px;
-        }
-        
-        #content * {
-            color: #fff;
         }
 
         #galerie {
@@ -318,8 +359,25 @@
 
         <div id="content">
             <div id="accueil">
-                <div id="reserver">
-
+                <div id="container-reserver">
+                    <div id="reserver">
+                        <h2 class="blue">Réserver</h2>
+                        <div class="input">Nom</div>
+                        <div class="input">Téléphone</div>
+                        <div style="margin: 10px auto;">
+                            <span>Nb. pers. : </span>
+                            <span style="margin-left: 108px;border: 1px solid grey;padding: 2px;" class="blue">2 <img style="width: 8px;margin-bottom: 1px;" src="spinner.png" /></span>
+                        </div>
+                        <div>
+                            <span>Jour : </span>
+                            <span style="margin-left: 64px;" class="blue">22/10/2017 <i class="material-icons blue">date_range</i></span>
+                        </div>
+                        <div>
+                            <span>Heure : </span>
+                            <span style="margin-left: 76px;border: 1px solid grey;padding: 2px;" class="blue">12h30 <i class="material-icons blue">arrow_drop_down</i></span>
+                        </div>
+                        <div id="confirm">Confirmer</div>
+                    </div>
                 </div>
             </div>
             <div id="container-carte">
