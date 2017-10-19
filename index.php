@@ -168,8 +168,30 @@
             height: 530px;
         }
 
+        #reserver {
+            background-color: rgba(255,255,255,0.8);
+            width: 100px;
+            height: 100px;
+        }
+
+        #container-carte {
+            background-image: url('carte.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            height: 525px;
+        }
+
+        #filtre-carte {
+            background-color: #79632b;
+            opacity: 0.85;
+            width: 100%;
+            height: 100%;
+        }
+
         #carte {
-            background-color: #00897B;
+            position: absolute;
+            margin-top: -525px;
         }
 
         #container-cave {
@@ -276,7 +298,7 @@
             <img id="nautilus-lateral" src="nautilus.png">
             <span id="coquille-lateral">La Coquille</span>
             <ul>
-                <li style="background: #f6f6f6"><a href="#accueil">Accueil</a></li>
+                <li style="background: #f1f1f1"><a href="#accueil">Accueil</a></li>
                 <li><a href="#carte">La carte</a></li>
                 <li style="background: #e5e5e5"><a href="#cave">La cave</a></li>
                 <li><a href="#galerie">La galerie</a></li>
@@ -296,10 +318,15 @@
 
         <div id="content">
             <div id="accueil">
-                
+                <div id="reserver">
+
+                </div>
             </div>
-            <div id="carte">
-                <h1>La carte</h1>
+            <div id="container-carte">
+                <div id="filtre-carte"></div>
+                <div id="carte">
+                    <h1>La carte</h1>
+                </div>
             </div>
             <div id="container-cave">
                 <div id="filtre-cave"></div>
