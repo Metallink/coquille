@@ -2,6 +2,8 @@
 
 <html>
     <head>
+        <title>La Coquille</title>
+        <link rel="icon" type="image/png" href="favicon.png" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
@@ -185,7 +187,7 @@
             width: 220px;
             height: 300px;
             border-radius: 5px;
-            border: 2px solid #c7a757;
+            border: 2px solid #77590d;
             padding: 12px;
         }
 
@@ -195,10 +197,12 @@
 
         #reserver h2 {
             font-size: 20px;
+            margin-bottom: 20px;
         }
 
         #reserver .blue {
-            color: #0087ce;
+            /*color: #0087ce;*/
+            color: #77590d;
         }
 
         #reserver .input {
@@ -210,13 +214,14 @@
         }
 
         #confirm {
-            border: 1px solid black;
+            border: 1px solid #77590d;
             padding: 10px 15px;
             width: 80px;
             text-align: center;
-            background-color: #0087ce;
-            color: #fff;
+            background-color: #e8ddc2;
+            color: #2f2201;
             border-radius: 3px;
+            margin: 25px auto;
         }
 
         #container-carte {
@@ -364,15 +369,15 @@
                         <h2 class="blue">Réserver</h2>
                         <div class="input">Nom</div>
                         <div class="input">Téléphone</div>
-                        <div style="margin: 10px auto;">
+                        <div style="margin: 20px auto">
                             <span>Nb. pers. : </span>
                             <span style="margin-left: 108px;border: 1px solid grey;padding: 2px;" class="blue">2 <img style="width: 8px;margin-bottom: 1px;" src="spinner.png" /></span>
                         </div>
-                        <div>
+                        <div style="margin: 10px auto 10px auto;">
                             <span>Jour : </span>
                             <span style="margin-left: 64px;" class="blue">22/10/2017 <i class="material-icons blue">date_range</i></span>
                         </div>
-                        <div>
+                        <div style="margin: 10px auto 10px auto;">
                             <span>Heure : </span>
                             <span style="margin-left: 76px;border: 1px solid grey;padding: 2px;" class="blue">12h30 <i class="material-icons blue">arrow_drop_down</i></span>
                         </div>
