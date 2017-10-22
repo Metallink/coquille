@@ -224,6 +224,38 @@
             margin: 25px auto;
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         #container-carte {
             background-image: url('carte.jpg');
             background-repeat: no-repeat;
@@ -237,11 +269,20 @@
             opacity: 0.85;
             width: 100%;
             height: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
-        #carte {
-            position: absolute;
-            margin-top: -525px;
+        .menu-carte {
+             height: 400px;
+             width: 250px;
+             text-align: center;
+        }
+        
+        .menu-carte img {
+            width: 130px;
         }
 
         #container-cave {
@@ -386,9 +427,31 @@
                 </div>
             </div>
             <div id="container-carte">
-                <div id="filtre-carte"></div>
-                <div id="carte">
-                    <h1>La carte</h1>
+                <div id="filtre-carte">
+                    <h1 style="width: 100%; margin: auto; margin-top: 15px; margin-left: 50px;"/>La carte</h1>
+                    <div class="menu-carte">
+                        <p style="text-decoration: underline; font-size: 18px;">Menu Mer</p>
+                        <img src="trait-horizontal.png">
+                        <p>Bar de ligne de Saint-Jean-de-Luz</p>
+                        <img src="trait-horizontal.png">
+                        <p>échalotes confites</p>
+                        <img src="trait-horizontal.png">
+                        <p>délicate gelée</p>
+                        <img src="trait-horizontal.png">
+                        <p>huîtres et caviar d’Aquitaine</p>
+                    </div>
+
+                    <div class="menu-carte" id="menu-terre">
+                        <p style="text-decoration: underline; font-size: 18px;">Menu Terre</p>
+                        <img src="trait-horizontal.png">
+                        <p>Pointrine laquée de cochon de « Kintoa »</p>
+                        <img src="trait-horizontal.png">
+                        <p>« lepoa » rôti au chorizo</p>
+                        <img src="trait-horizontal.png">
+                        <p>oreilles en millefeuille</p>
+                        <img src="trait-horizontal.png">
+                        <p>cromesquis de boudin.</p>
+                    </div>
                 </div>
             </div>
             <div id="container-cave">
