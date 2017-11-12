@@ -171,7 +171,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
-            height: 530px;
+            height: 600px;
         }
 
         #container-reserver {
@@ -211,6 +211,7 @@
             padding: 5px;
             margin: 10px auto;
             color: gray;
+            background-color: #FFF;
         }
 
         #confirm {
@@ -223,38 +224,6 @@
             border-radius: 3px;
             margin: 25px auto;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         #container-carte {
             background-image: url('carte.jpg');
@@ -289,8 +258,8 @@
             background-image: url('vins.png');
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 100%;
-            height: 525px;
+            background-size: 110%;
+            height: 625px;
         }
 
         #filtre-cave {
@@ -302,12 +271,20 @@
 
         #cave {
             position: absolute;
-            margin-top: -525px;
+            margin-top: -625px;
         }
 
         #cave table {
             width: 1040px;
             margin-top: 20px;
+        }
+
+        #cave table .region {
+            padding-bottom: 7px;
+        }
+
+        #cave table td {
+            padding-bottom: 3px;
         }
 
         #galerie {
@@ -334,7 +311,7 @@
 
         #scroll-images {
             position: absolute;
-            width: 100px;
+            width: 139px;
             height: 320px;
             background-color: rgba(0,0,0,0.6);
             margin-top: -300px;
@@ -360,7 +337,8 @@
         }
 
         #contact {
-            background-color: #1E88E5;
+            /*background-color: #1E88E5;*/
+            background-color: #a07e28;
             padding: 20px;
             color: #fff;
             text-align: center;
@@ -377,7 +355,7 @@
             </span>
             <span>
                 <i class="material-icons">location_on</i>
-                <span>Chemin de la Coquille BIDART 64310</span>
+                <span>Chemin de la Coquille - 64310 BIDART</span>
             </span>
         </div>
 
@@ -385,9 +363,9 @@
             <img id="nautilus-lateral" src="nautilus.png">
             <span id="coquille-lateral">La Coquille</span>
             <ul>
-                <li style="background: #f1f1f1"><a href="#accueil">Accueil</a></li>
+                <li style="background: #e5e5e5"><a href="#accueil">Accueil</a></li>
                 <li><a href="#carte">La carte</a></li>
-                <li style="background: #e5e5e5"><a href="#cave">La cave</a></li>
+                <li style="background: #c3c3c3"><a href="#cave">La cave</a></li>
                 <li><a href="#galerie">La galerie</a></li>
             </ul>
         </div>
@@ -412,7 +390,7 @@
                         <div class="input">Téléphone</div>
                         <div style="margin: 20px auto">
                             <span>Nb. pers. : </span>
-                            <span style="margin-left: 108px;border: 1px solid grey;padding: 2px;" class="blue">2 <img style="width: 8px;margin-bottom: 1px;" src="spinner.png" /></span>
+                            <span style="background-color: #FFF; margin-left: 102px;border: 1px solid grey;padding: 2px; padding-left: 8px" class="blue">2 <img style="width: 8px;margin-bottom: 1px;" src="spinner.png" /></span>
                         </div>
                         <div style="margin: 10px auto 10px auto;">
                             <span>Jour : </span>
@@ -420,7 +398,7 @@
                         </div>
                         <div style="margin: 10px auto 10px auto;">
                             <span>Heure : </span>
-                            <span style="margin-left: 76px;border: 1px solid grey;padding: 2px;" class="blue">12h30 <i class="material-icons blue">arrow_drop_down</i></span>
+                            <span style="background-color: #FFF; margin-left: 76px;border: 1px solid grey;padding: 2px;" class="blue">12h30 <i class="material-icons blue">arrow_drop_down</i></span>
                         </div>
                         <div id="confirm">Confirmer</div>
                     </div>
@@ -467,7 +445,7 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><u>Vallée de la Loire</u></td>
+                            <td class="region"><u>Vallée de la Loire</u></td>
                         </tr>
                         <tr>
                             <td>IGP Vin de pays d&#39;Urf&eacute;, Domaine G. Bonnefoy &quot;Roussanne&quot;</td>
@@ -491,7 +469,7 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><u>Vall&eacute;e du Rh&ocirc;ne</u></td>
+                            <td class="region"><u>Vall&eacute;e du Rh&ocirc;ne</u></td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
@@ -510,7 +488,7 @@
                         </tr>
                         <tr>
                             <td>AOP Condrieu, Domaine S. Montez &quot;La grillette&quot;</td>
-                            <td>Plusieurs dispo</td>
+                            <td>Plusieurs en stock</td>
                             <td>75cl</td>
                             <td>94.00&euro;</td>
                         </tr>
@@ -527,7 +505,7 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><u>Bordeaux</u></td>
+                            <td class="region"><u>Bordeaux</u></td>
                         </tr>
                         <tr>
                             <td>AOP Montlouis, Domaine de La Taille aux Loups</td>
@@ -551,7 +529,7 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><u>Vall&eacute;e du Rh&ocirc;ne</u></td>
+                            <td class="region"><u>Vall&eacute;e du Rh&ocirc;ne</u></td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
@@ -607,7 +585,7 @@
                 </span>
                 <span style="padding-left: 5%;">
                     <i class="material-icons">location_on</i>
-                    <span>Chemin de la Coquille BIDART 64310</span>
+                    <span>Chemin de la Coquille - 64310 BIDART</span>
                 </span>
             </div>
         </div>
