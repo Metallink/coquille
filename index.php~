@@ -440,7 +440,7 @@
                         <p style="padding-top: 7px; padding-bottom: 7px;">ou</p>
                         <p>Selle d’agneau rôti, son duo de courge butternut</p>
                         <img src="trait-horizontal.png">
-                        <p style="text-decoration: underline; font-size: 18px; padding-bottom: 7px;">Dessert</p>
+                        <p style="text-decoration: underline; font-size: 18px; ">Dessert</p>
                         <p>Oreilles en millefeuille</p>
                         <p style="padding-top: 7px; padding-bottom: 7px;">ou</p>
                         <p>Ganache tendre à la passion, son croustillant spéculos</p>
