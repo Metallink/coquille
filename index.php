@@ -341,17 +341,17 @@
 
         #scroll-images {
             position: absolute;
-            width: 139px;
+            width: 116px;
             height: 322px;
-            background-color: rgba(0,0,0,0.6);
+            background-color: rgba(0,0,0,0.75);
             margin-top: -302px;
-            margin-left: 913px;
+            margin-left: 936px;
         }
 
         #scroll-images > i.material-icons {
             font-size: 160px;
             margin-top: 90px;
-            margin-left: -25px;
+            margin-left: -18px;
         }
         
         #galerie h1 {
@@ -432,6 +432,10 @@
                 <tr>
                     <td>Samedi</td>
                     <td>19:00-23:00</td>
+                </tr>
+                <tr>
+                    <td>Dimanche</td>
+                    <td>Fermé</td>
                 </tr>
                 </tbody>
             </table>
