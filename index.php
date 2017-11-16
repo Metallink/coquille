@@ -78,7 +78,17 @@
         #bandeau-contact > span {
             display: inline-block;
             text-align: center;
-            margin: 10px 5%;
+            margin: 10px 69px;
+        }
+
+        #bandeau-contact > span:last-child > img {
+            width: 15px;
+            vertical-align: bottom;
+            margin-right: 7px;
+        }
+
+        #bandeau-contact > span:last-child {
+
         }
 
         .material-icons {
@@ -108,6 +118,29 @@
         #menu-lateral li {
             padding: 15px 30px;
             font-size: 22px;
+        }
+
+        #menu-lateral-droit {
+            position: fixed;
+            font-family: inherit;
+            height: 100%;
+            width: 20%;
+            margin-top: 135px;
+            right: -30px;
+            font-size: 18px;
+        }
+
+        #menu-lateral-droit th {
+            padding-bottom: 15px;
+            font-weight: bold;
+        }
+
+        #menu-lateral-droit td {
+            padding-bottom: 10px;
+        }
+
+        #menu-lateral-droit td:first-child {
+            width: 103px;
         }
 
         #menu-normal {
@@ -230,7 +263,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
-            height: 580px;
+            height: 600px;
         }
 
         #filtre-carte {
@@ -258,7 +291,7 @@
             background-image: url('vins.png');
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 110%;
+            background-size: 120%;
             height: 625px;
         }
 
@@ -312,10 +345,10 @@
         #scroll-images {
             position: absolute;
             width: 139px;
-            height: 320px;
+            height: 322px;
             background-color: rgba(0,0,0,0.6);
-            margin-top: -300px;
-            margin-left: 954px;
+            margin-top: -302px;
+            margin-left: 913px;
         }
 
         #scroll-images > i.material-icons {
@@ -357,6 +390,7 @@
                 <i class="material-icons">location_on</i>
                 <span>Chemin de la Coquille - 64310 BIDART</span>
             </span>
+            <span><img src="pastille.png">Ouvert</span>
         </div>
 
         <div id="menu-lateral">
@@ -368,6 +402,42 @@
                 <li style="background: #c3c3c3"><a href="#cave">La cave</a></li>
                 <li><a href="#galerie">La galerie</a></li>
             </ul>
+        </div>
+
+        <div id="menu-lateral-droit">
+            <table>
+                <thead>
+                <tr>
+                    <th colspan="10" style="text-align: left">Horaires d'ouvertures</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Lundi</td>
+                    <td>11:30-15:00</td>
+                </tr>
+                <tr>
+                    <td>Mardi</td>
+                    <td>11:30-15:00, 19:00-23:00</td>
+                </tr>
+                <tr>
+                    <td>Mercredi</td>
+                    <td>11:30-15:00, 19:00-23:00</td>
+                </tr>
+                <tr>
+                    <td>Jeudi</td>
+                    <td>11:30-15:00, 19:00-23:00</td>
+                </tr>
+                <tr style="font-weight: bold;">
+                    <td>Vendredi</td>
+                    <td>11:30-15:00, 19:00-23:00</td>
+                </tr>
+                <tr>
+                    <td>Samedi</td>
+                    <td>19:00-23:00</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
         <div id="menu-normal">
