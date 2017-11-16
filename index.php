@@ -214,18 +214,19 @@
         #reserver {
             background-color: rgba(255,255,255,0.9);
             width: 220px;
-            height: 300px;
+            height: 306px;
             border-radius: 5px;
             border: 2px solid #77590d;
-            padding: 12px;
+            padding: 25px;
         }
 
         #reserver * {
             color: #000;
+            font-size: 18px;
         }
 
         #reserver h2 {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 20px;
         }
 
@@ -246,7 +247,7 @@
         #confirm {
             border: 1px solid #77590d;
             padding: 10px 15px;
-            width: 80px;
+            width: 90px;
             text-align: center;
             background-color: #e8ddc2;
             color: #2f2201;
@@ -456,15 +457,24 @@
                         <div class="input">Téléphone</div>
                         <div style="margin: 20px auto">
                             <span>Nb. pers. : </span>
-                            <span style="background-color: #FFF; margin-left: 102px;border: 1px solid grey;padding: 2px; padding-left: 8px" class="blue">2 <img style="width: 8px;margin-bottom: 1px;" src="spinner.png" /></span>
+                            <span style="background-color: #FFF;
+    margin-left: 88px;
+    border: 1px solid grey;
+    padding: 2px;
+    padding-left: 9px;
+    font-size: 18px;" class="blue">2 <img style="width: 9px;margin-bottom: 1px;" src="spinner.png" /></span>
                         </div>
-                        <div style="margin: 10px auto 10px auto;">
+                        <div style="margin: 10px auto 20px auto;">
                             <span>Jour : </span>
-                            <span style="margin-left: 64px;" class="blue">22/10/2017 <i class="material-icons blue">date_range</i></span>
+                            <span style="margin-left: 41px;" class="blue">22/10/2017 <i class="material-icons blue" style="font-size: 29px">date_range</i></span>
                         </div>
                         <div style="margin: 10px auto 10px auto;">
                             <span>Heure : </span>
-                            <span style="background-color: #FFF; margin-left: 76px;border: 1px solid grey;padding: 2px;" class="blue">12h30 <i class="material-icons blue">arrow_drop_down</i></span>
+                            <span style="background-color: #FFF;
+    margin-left: 66px;
+    border: 1px solid grey;
+    padding: 3px;
+    font-size: 18px;" class="blue">12h30 <i class="material-icons blue">arrow_drop_down</i></span>
                         </div>
                         <div id="confirm">Confirmer</div>
                     </div>
