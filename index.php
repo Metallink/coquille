@@ -87,10 +87,6 @@
             margin-right: 7px;
         }
 
-        #bandeau-contact > span:last-child {
-
-        }
-
         .material-icons {
             vertical-align: middle;
             margin-bottom: 4px;
