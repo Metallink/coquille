@@ -254,18 +254,81 @@
             border-radius: 3px;
             margin: 25px auto;
         }
+        
+        #container-cheffe {
+        	background-image: url('cheffe.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            height: 600px;
+        }
+        
+        #texte-cheffe {
+        
+        	width: 1020px;
+        	height: 40px;
+        }
+        
+        blockquote {
+			font-style: normal;
+			padding:24px 40px 16px 25px;
+			line-height:64px;
+		}
+
+		blockquote p {
+			font-size:14px;
+			text-align:right;
+			padding:0;
+			color: #134977;
+			display:block;
+		}
+
+		blockquote p.citation {
+			font-size:36px;
+			text-align:left;
+			padding:0 0 10px 20px;
+			position:relative;
+		}
+
+		blockquote p.citation:before, blockquote p.citation:after {
+			content: '”';
+			font-size: 32px;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			color: #134977;
+			font-weight:bold;
+			vertical-align:top;
+			line-height:0.8
+		}
+
+		blockquote p.citation:before {
+			content: '“';
+			position:absolute;
+			left:0;
+			top:-2px;
+		}
 
         #container-carte {
             background-image: url('carte.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
-            height: 600px;
+            height: 827px;
+        }
+        
+        #filtre-cheffe {
+        	background-color: #c19219;
+            opacity: 0.75;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         #filtre-carte {
-            background-color: #79632b;
-            opacity: 0.85;
+            background-color: #774c1b;
+            opacity: 0.75;
             width: 100%;
             height: 100%;
 
@@ -484,11 +547,22 @@
                     </div>
                 </div>
             </div>
+            <div id="container-cheffe">
+            	<div id="filtre-cheffe">
+	            	<div id="texte-cheffe">
+						<blockquote>
+							<p class="citation">Je vous accueil dans mon super restau qui est trop bien. Venez vous défoncer les papilles avec mon magret et mes noix</p>
+							<p> - Sophie Millet - Chef 4 etoile (sisi) </p>
+						</blockquote>	
+	            	</div>
+            	</div>
+           	</div>
             <div id="container-carte">
                 <div id="filtre-carte">
                     <h1 style="width: 100%; margin: auto; margin-top: 15px; margin-left: 50px;"/>La carte</h1>
                     <div class="menu-carte">
                         <p style="text-decoration: underline; font-size: 28px;">Menu Mer</p>
+                        <p style="margin-top:20px;">40 Euros</p>
                         <img src="trait-horizontal.png">
                         <p style="text-decoration: underline; font-size: 18px; padding-bottom: 7px;">Entrée</p>
                         <p>Bar de ligne de Saint-Jean-de-Luz</p>
@@ -496,7 +570,7 @@
                         <p>Saint Jacques poêlée accompagnée d’une soupe de châtaigne</p>
                         <img src="trait-horizontal.png">
                         <p style="text-decoration: underline; font-size: 18px; padding-bottom: 7px;">Plat</p>
-                        <p>Huîtres et caviar d’Aquitaine</p>
+                        <p>Noix de Saint-Jacques déglacée au Jurançon sur un lit de mâche</p>
                         <p style="padding-top: 7px; padding-bottom: 7px;">ou</p>
                         <p>La sole rôtie servi avec son crémeux de pomme de terre au romarin</p>
                         <img src="trait-horizontal.png">
@@ -509,6 +583,7 @@
 
                     <div class="menu-carte" id="menu-terre">
                         <p style="text-decoration: underline; font-size: 28px;">Menu Terre</p>
+                        <p style="margin-top:20px;">45 Euros</p>
                         <img src="trait-horizontal.png">
                         <p style="text-decoration: underline; font-size: 18px; padding-bottom: 7px;">Entrée</p>
                         <p>Pointrine laquée de cochon de « Kintoa »</p>
@@ -516,7 +591,7 @@
                         <p>Escalope de foie gras poêlée servie avec duo de mangue à la coriandre</p>
                         <img src="trait-horizontal.png">
                         <p style="text-decoration: underline; font-size: 18px; padding-bottom: 7px;">Plat</p>
-                        <p>« Lepoa » rôti au chorizo</p>
+                        <p>Filet de Magret Barbet sauche champagne</p>
                         <p style="padding-top: 7px; padding-bottom: 7px;">ou</p>
                         <p>Selle d’agneau rôti, son duo de courge butternut</p>
                         <img src="trait-horizontal.png">
