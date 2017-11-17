@@ -159,7 +159,7 @@
 
         #menu-normal a {
             color: #000;
-            margin: auto 3%;
+            margin: auto 2%;
             font-size: 20px; 
         }
 
@@ -191,8 +191,13 @@
             color: #fff;
         }
 
-        #carte, #cave, #galerie, #contact {
+        #cheffe, #carte, #cave, #galerie, #contact {
             padding: 20px 50px;
+        }
+
+        #cheffe {
+            position: absolute;
+            margin-top: -590px;
         }
 
         #accueil {
@@ -261,6 +266,7 @@
             background-position: center;
             background-size: 100%;
             height: 600px;
+            text-shadow: #805f00 1px 1px, #805f00 -1px 1px, #805f00 -1px -1px, #805f00 1px -1px;
         }
         
         #texte-cheffe {
@@ -271,12 +277,12 @@
         
         blockquote {
 			font-style: normal;
-			padding:24px 40px 16px 25px;
-			line-height:64px;
+			padding: 24px 40px 16px 25px;
+			line-height: 48px;
 		}
 
 		blockquote p {
-			font-size:14px;
+			font-size:18px;
 			text-align:right;
 			padding:0;
 			color: #134977;
@@ -284,35 +290,39 @@
 		}
 
 		blockquote p.citation {
-			font-size:36px;
-			text-align:left;
-			padding:0 0 10px 20px;
-			position:relative;
+			font-size: 29px;
+            text-align: left;
+            padding: 0 0 10px 10px;
+            position: relative;
+            width: 730px;
 		}
 
 		blockquote p.citation:before, blockquote p.citation:after {
 			content: '”';
 			font-size: 32px;
 			font-family:Georgia, "Times New Roman", Times, serif;
-			color: #134977;
+			color: #fff;
 			font-weight:bold;
-			vertical-align:top;
+			vertical-align:text-top;
 			line-height:0.8
 		}
 
 		blockquote p.citation:before {
 			content: '“';
-			position:absolute;
-			left:0;
-			top:-2px;
+            margin-right: 10px;
 		}
+
+        blockquote p.citation:after {
+            margin-left: 6px;
+        }
 
         #container-carte {
             background-image: url('carte.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
-            height: 827px;
+            height: 718px;
+            text-shadow: #562b00 1px 1px, #562b00 -1px 1px, #562b00 -1px -1px, #562b00 1px -1px;
         }
         
         #filtre-cheffe {
@@ -321,9 +331,9 @@
             width: 100%;
             height: 100%;
 
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            /*display: flex;*/
+            /*justify-content: space-around;*/
+            /*flex-wrap: wrap;*/
         }
 
         #filtre-carte {
@@ -353,6 +363,7 @@
             background-position: center;
             background-size: 120%;
             height: 625px;
+            text-shadow: #642021 1px 1px, #642021 -1px 1px, #642021 -1px -1px, #642021 1px -1px;
         }
 
         #filtre-cave {
@@ -432,11 +443,21 @@
         #contact {
             /*background-color: #1E88E5;*/
             background-color: #a07e28;
-            padding: 20px;
+            padding: 40px 90px;
             color: #fff;
-            text-align: center;
         }
 
+        .etoiles {
+            letter-spacing: -8px;
+            color: #6d5c25;
+            vertical-align: super;
+            margin-left: -5px;
+        }
+
+        #menu-normal .etoiles {
+            letter-spacing: -4px;
+            margin-left: -2px;
+        }
 
     </style>
 
@@ -455,14 +476,26 @@
 
         <div id="menu-lateral">
             <img id="nautilus-lateral" src="nautilus.png">
-            <span id="coquille-lateral">La Coquille</span>
+            <span id="coquille-lateral">La Coquille<span class="etoiles">☆ ☆ ☆</span></span>
             <ul>
                 <li style="background: #e5e5e5"><a href="#accueil">Accueil</a></li>
-                <li><a href="#carte">La carte</a></li>
+                <li><a>Le Chef</a></li>
+                <li><a href="#carte">Spécialités</a></li>
                 <li style="background: #c3c3c3"><a href="#cave">La cave</a></li>
                 <li><a href="#galerie">La galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+
+<!--        position: absolute;-->
+<!--        left: 1060px;-->
+<!--        top: 580px;-->
+<!--        font-size: 33px;-->
+<!--        font-weight: bold;-->
+<!--        width: 410px;-->
+<!--        text-shadow: #484848 5px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;-->
+<!--        text-align: justify;-->
+<!--        font-family: 'Satisfy', cursive;-->
 
         <div id="menu-lateral-droit">
             <table>
@@ -506,12 +539,14 @@
 
         <div id="menu-normal">
             <a id="a-accueil" href="#accueil">Accueil</a>
-            <a href="#carte" style="padding-right: 4%">La carte</a>
-            <a href="#cave" style="padding-left: 4%">La cave</a>
+            <a>Le Chef</a>
+            <a href="#carte" style="padding-right: 5%">Spécialités</a>
+            <a href="#cave" style="padding-left: 5%">La cave</a>
             <a href="#galerie">La galerie</a>
+            <a href="#contact">Contact</a>
             <div>
                 <img id="nautilus-normal" src="nautilus.png">
-                <p>La Coquille</p>
+                <p>La Coquille<span class="etoiles">☆☆☆</span></p>
             </div>
         </div>
 
@@ -541,38 +576,42 @@
     margin-left: 66px;
     border: 1px solid grey;
     padding: 3px;
-    font-size: 18px;" class="blue">12h30 <i class="material-icons blue">arrow_drop_down</i></span>
+    font-size: 18px;" class="blue">12:30 <i class="material-icons blue">arrow_drop_down</i></span>
                         </div>
                         <div id="confirm">Confirmer</div>
                     </div>
                 </div>
             </div>
             <div id="container-cheffe">
-            	<div id="filtre-cheffe">
-	            	<div id="texte-cheffe">
-						<blockquote>
-							<p class="citation">Je vous accueil dans mon super restau qui est trop bien. Venez vous défoncer les papilles avec mon magret et mes noix</p>
-							<p> - Sophie Millet - Chef 4 etoile (sisi) </p>
-						</blockquote>	
-	            	</div>
+                <div id="filtre-cheffe">
             	</div>
+                <div id="cheffe">
+                    <h1>Le Chef</h1>
+                    <div id="texte-cheffe">
+                        <blockquote>
+                            <p class="citation">Nous vous invitons à éveiller vos papilles gustatives, déguster nos plats gastronomiques réalisés à partir des meilleurs produits locaux.</p>
+                            <p>Sophie Millet - Chef 3 étoiles</p>
+                        </blockquote>
+                        <p style="font-size: 22px; text-align: justify; padding-right: 20px; margin-top: 89px; line-height: 28px;">Le Chef Millet meilleur ouvrier de France 2015 et 2016 a pu se former auprès des plus grands à l'école Chauvin à Paris.<br><br><br>Après avoir cotoyée les plus grands restaurants pendant 17 ans, La Coquille est le fruit de la passion des mets de sa terre natale.</p>
+                    </div>
+                </div>
            	</div>
             <div id="container-carte">
                 <div id="filtre-carte">
-                    <h1 style="width: 100%; margin: auto; margin-top: 15px; margin-left: 50px;"/>La carte</h1>
+                    <h1 style="width: 100%; margin: auto; margin-top: 15px; margin-left: 50px; margin-bottom: -50px;"/>Spécialités</h1>
                     <div class="menu-carte">
                         <p style="text-decoration: underline; font-size: 28px;">Menu Mer</p>
-                        <p style="margin-top:20px;">40 Euros</p>
+                        <p style="margin-top:20px;">40€</p>
                         <img src="trait-horizontal.png">
                         <p style="text-decoration: underline; font-size: 18px; padding-bottom: 7px;">Entrée</p>
-                        <p>Bar de ligne de Saint-Jean-de-Luz</p>
+                        <p>Bar de ligne de St-Jean-de-Luz</p>
                         <p style="padding-top: 7px; padding-bottom: 7px;">ou</p>
-                        <p>Saint Jacques poêlée accompagnée d’une soupe de châtaigne</p>
+                        <p>St-Jacques poêlées accompagnées d’une soupe de châtaigne</p>
                         <img src="trait-horizontal.png">
                         <p style="text-decoration: underline; font-size: 18px; padding-bottom: 7px;">Plat</p>
-                        <p>Noix de Saint-Jacques déglacée au Jurançon sur un lit de mâche</p>
+                        <p>Noix de St-Jacques déglacées au Jurançon sur un lit de mâche</p>
                         <p style="padding-top: 7px; padding-bottom: 7px;">ou</p>
-                        <p>La sole rôtie servi avec son crémeux de pomme de terre au romarin</p>
+                        <p>La sole rôtie servi avec son crémeux de pomme de terre</p>
                         <img src="trait-horizontal.png">
                         <p style="text-decoration: underline; font-size: 18px; padding-bottom: 7px;">Dessert</p>
                         <p>Variation autour de la figue</p>
@@ -583,15 +622,15 @@
 
                     <div class="menu-carte" id="menu-terre">
                         <p style="text-decoration: underline; font-size: 28px;">Menu Terre</p>
-                        <p style="margin-top:20px;">45 Euros</p>
+                        <p style="margin-top:20px;">50€</p>
                         <img src="trait-horizontal.png">
                         <p style="text-decoration: underline; font-size: 18px; padding-bottom: 7px;">Entrée</p>
-                        <p>Pointrine laquée de cochon de « Kintoa »</p>
+                        <p>Poitrine laquée de cochon de « Kintoa »</p>
                         <p style="padding-top: 7px; padding-bottom: 7px;">ou</p>
                         <p>Escalope de foie gras poêlée servie avec duo de mangue à la coriandre</p>
                         <img src="trait-horizontal.png">
                         <p style="text-decoration: underline; font-size: 18px; padding-bottom: 7px;">Plat</p>
-                        <p>Filet de Magret Barbet sauche champagne</p>
+                        <p>Filet de magret barbet sauche champagne</p>
                         <p style="padding-top: 7px; padding-bottom: 7px;">ou</p>
                         <p>Selle d’agneau rôti, son duo de courge butternut</p>
                         <img src="trait-horizontal.png">
@@ -600,6 +639,10 @@
                         <p style="padding-top: 7px; padding-bottom: 7px;">ou</p>
                         <p>Ganache tendre à la passion, son croustillant spéculos</p>
                     </div>
+                    <p style="position: absolute;
+    margin-top: 665px;
+    margin-left: -205px;">Vous pouvez également consulter l'ensemble de notre carte en <span style="color: #ffd15d;
+    font-weight: bold;">cliquant ici</span>.</p>
                 </div>
             </div>
             <div id="container-cave">
@@ -749,14 +792,28 @@
                     <i class="material-icons">chevron_right</i>
                 </div>
             </div>
-            <div id="contact">
-                <span style="padding-right: 5%;">
-                    <a id="tel" href="tel:+33561347892"><i class="material-icons">phone</i>+33 (0)5 61 34 78 92</a>
-                </span>
-                <span style="padding-left: 5%;">
-                    <i class="material-icons">location_on</i>
-                    <span>Chemin de la Coquille - 64310 BIDART</span>
-                </span>
+            <div id="contact" style="display: flex;">
+                <div style="font-size: 18px; width: 100%">
+                    <p style="font-size: 22px; font-weight: bold">Contactez-nous : </p>
+                    <span style="display: block; margin: 40px;">
+                        <a id="tel" href="tel:+33561347892"><i class="material-icons style="margin-right: 2px"">phone</i>+33 (0)5 61 34 78 92</a><span style="vertical-align: super;">*</span>
+                    </span>
+                    <span style="display: block; margin-left: 40px">
+                        <a id="tel" href="tel:+33561347892"><i class="material-icons" style="margin-right: 5px">mail</i>contact@lacoquille.fr</a>
+                    </span>
+                    <span style="display: block; margin: 40px;">
+                        <i class="material-icons">location_on</i>
+                        <span style="margin-left: 30px; display: block; margin-top: -25px;">
+                            <p>Restaurant La Coquille</p>
+                            <p>Chemin de la Coquille</p>
+                            <p>64310 BIDART</p>
+                        </span>
+                    </span>
+                    <span style="font-size: 12px; font-style: italic; margin-left: 40px">* se référencer aux horaires d'ouvertures</span>
+                </div>
+                <div>
+                    <img style="width: 400px; box-shadow: 1px 1px 12px #555;" src="maps.png">
+                </div>
             </div>
         </div>
     </body>
